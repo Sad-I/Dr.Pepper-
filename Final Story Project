@@ -1,0 +1,231 @@
+def Konstantinos():
+    print("The three of them stand firm Guarding the main entrance to the CPU like a sort of digital Spartans prepared to give their life, prepared to make a last stand. There is a distinct energy in the air, an energy that can be described almost as a form of eagerness-if that even makes sense in such situations- to see the face of their own Armageddon. The calm before the storm. And surely, there it was. Grinding and sliding against the corridor walls the colossal worm resembled the foe in the Star Wars films. Cyber giggled as he remembered David mumbling about how they don’t make films like these no more. Such irony. SWOOSH! The worm charges! ")
+    answer=input("Enter A to block the attack or B to evade it : ")
+    while answer!="A":
+        if answer=="B":
+            while answer=="B":
+                print("With a swift barell roll Cyber evades the worm’s tail whip. He gets up a little disoriented and looks for his partners. Protocol Patrol was on the ground covered with slime while Dan was trying to get his bearings, on one knee, after his head had hit the corridor wall. This sight made Cyber realize that their only hope in surviving was to stand firm as one." )
+                answer=input("The worm charges again! Enter A to block the attack or B to evade it. ")
+        else:
+            print("Invalid entry. Try again")
+            answer=input("Enter A to block the attack or B to evade it. ")
+            print("- Cyber: “HOLD THE FORMATION! If we defeat it rest will scatter to oblivion. Maybe the newspaper choice as ammunition wasn’t the worst idea Protocol Patrol, you just miscalculated the proportions!”. The three of them burst in hysterical laughter as they try to dodge the worms’ attacks. And they were doing so well, for a system so outdated, but then reality hit. “Dan is down!” Protocol Patrol exclaimed.")
+            answer=input("Enter A to Charge the worm or B to give up hope : ")
+            while answer!="B":
+                if answer=="A":
+                    while answer=="A":
+                        print("Cyber looks up. His vision, although blurred by tears of rage, was locked on the virus as firm as a missile launcher. At that moment he wasn’t thinking about David or the CPU. The one thing in his mind was his fallen fellow combatant Dan. Like a raging bull, without thinking twice, Cyber sprints eight up to the giant worm and crane kicks its head- karate kid style-. *Loud thud*. The worms thick exoskeleton felt like a brick wall and Cyber fell on his side. With a loud roar, the worm flicks him with its tail and Cyber hits the main gate.")
+                        answer=input(" Enter A to charge the worm again or B to give up hope : ")
+                else:
+                    print("Invalid entry. Try again")
+                    answer=input("Enter A to Charge the worm or B to give up hope : ")
+                    print(". Cyber got to his knees. All hope seemed to be lost! “Damn you David and damn your Hot singles”, he screamed. All hope was lost as the malware’s shadow lurked above them like a Damoclean Sword. The worm begins to charge. Radio distorted voice: “ Good work boys, we got it from here”! The ground shook thrice as three massive robotic warriors hero-landed from the sky! “Thank god it’s the Scanguard! What took you guys so long?”, Cyber exclaimed with a shaky voice.”That’s what happens when you snooze your system updates old-timer"+ ". Before Cyber got to blame David the three robots merged into one whose size dwarfed the worm. STOMP! SQUISH! And then there was goo. “Where’s the rest?”, Scanguard asked. Cyber and Dan looked at each others old eyes, smiled, and layed down on their backs in exhaustion.")
+                    answer=input(" Enter A to thank Scanguard or B to ask them to stay : ")
+                    while answer!="A":
+                        if answer=="B":
+                            while answer=="B":
+                                print("Cyber looked up at the shiny robotic warriors. “Please stay! The malware world keeps updating rapidly and it’s only a matter of time until another virus comes back. We’re defensless!” he begged. “Just block David’s access to online dating services until he updates the system and you shall be fine! The Scanguard warrior replied with a grin. " )
+                                answer="A"
+                        else:
+                            print("Invalid entry. Try again")
+                            answer=input("Enter A to thank Scanguard or B to ask them to stay : ")
+                            print("They then thanked their saviours with whatever strength they had left and waved them goodbye as they launched back out of the system and into the web. And then there was peace. However, until the next morning of course when David spilled his coffee on his laptop and fried it to bits... But that’s a story for another time.")
+
+def Aishah():
+    print("OHH MY GOD!”  Click!...  Nothing  happens. The  seconds  leading this silence consist of all the thoughts of external    help  being thrown out of the window.  DAVID, you are officially in my wanted list, stop shaking the PC.  I can’t wait   around for them to kill me;  it’s always Cyber who  has to  risk his entire life without even a single reward in sight.")
+    print("  ")
+    print("A: Its not like I'm scared or anything. But by using my brain I think its best for someone else to sacrifice themselves  this time.")
+    print("B: I should go to check on the PC Map.")
+    print("  ")
+    PC_map=input("What should I do?")
+    while PC_map!="A": #or "a" or "B" or "b":
+      PC_map = input("Incorrect Choice, At this rate I will die much quicker. What should I do?")
+      if PC_map=="A": #or a :
+          print("  ")
+          print("It's much more safer to be under a table as who knows it might even rain viruses and viruses. CREEK....CREEK. . What was that? I have a better idea as I believe that everyone relies on me soi should act as a born leader and run as quickly as i can to the control room. And I am doing this voluntarily and am not scared at all.")            
+          print("Entering the Control Room...")
+          print("The CPU: the brain of the computer and it always has power over everything well except now. I MUST get to it or it really will be the end of the world for this PC and the most handsome person who lives in it. On the other hand, I won’t miss   Dan’s complaints of his non-changeable room in ROM or of Protocol Patrol’s attempts at sneaking creatures in through the   firewall. Left alone to fight with no backup in any sight but I still find the courage to slowly tiptoe from behind the    iron door and run as quietly as I can. I come across a long corridor that looks everlasting with no exit in sight.")
+          print("  ")
+          print("A:Turn right into the corridor")
+          print("B:Carry on the straight path that stays outdoor.")
+          print("  ")
+          corridor= input("Do I take the corridor or carry on?")
+          while corridor!= "B": #or a or B or b:
+              corridor= input(" Incorrect. Please choose with my safety in mind. Do I take the corridor or carry on?")
+              if corridor=="B": #or a :
+                  print("  ")
+                  print("I see mountains of files scattered all over the place from the hundreds of myPics folders and millions of files in the   colossal bin basket. The CPU contains many components inside but where would they hit, maybe the CU, that controls the     input and output of all data entering and exiting the computer planet.")
+                  print("The computer world that once was full of packets of information flying around everywhere but now is covered with the     noise of silence. CREEK..CREEK..BANG.")
+                  print("  ")
+                  print("A:Fight or Flight. The best of all of us do what I’m doing. RUN.")
+                  print("B:HIDE and try and find who it is.")
+                  print("  ")
+                  Fight_Flight=input("What should I do?")
+                  while Fight_Flight!= "B": #or a or B or b:
+                      Fight_Flight=input("Incorrect choice. Please make the correct choice as my life depends on it. What should I do?")
+                      if Fight_Flight== "B": #or a :
+                          print("  ")
+                          print("As I do what is right, I bang straight into a hard rock-like chest.  This is it Cyber, say goodbye to your  eye watering marmalade sandwich waiting at home for your  return. As I peek through my half closed eyes I see the glint in the eye  of one of my closest friends (Dan) who stands there bursting with fits of laughter.")
+                          print("“Hey, you can’t go around throwing mountains of files at your closest friend”, bellowed a voice. A voice that could only belong to Dan.")
+                          print("Dan could be a huge help in finding and tracking the virus. I should ask him to help me.")
+                          print("  ")
+                          print("A:Discuss the problem and ask for his help.")
+                          print("B:BRIBERY is the key to all of my problems. I have done so much for him that he would not deny to help me.")
+                          print("  ")
+                          bribe=input("What should i do?")
+                          while bribe!= "A": #or a or B or b:
+                              bribe=input("Incorrect choice. Friends always have our backs. What should i do?")
+                              if bribe== "A": #or a :
+                                  print("  ")
+                                  print("After over an hour worth of explanation, I stand waiting for Dan's answer to my question. As a lifetime goes by he       announces:It is too much of a risk and plus I am safer in the protocols room, So sorry, but not my problem.Well after    this, no one can say that I didn't try.")
+                                  print(" “Boy, am I glad to see you, now we can both travel to the CU and before you decline, you remember the time I helped to  give away some of your clock speed so that you would have to do less work, I'm fairly sure that an update could randomly  occur at any time. This could mean that your clock speed would go to normal or may even increase”.  The forced grin on   Dan’s face is like the shining sun when it is yanked from the outskirts of the sky.")
+                                  print("As we make our way through the everlasting barricades of files, we see a huddle hiding in the registers entrance, there  Protocol Patrol stands at the front protecting the rest with only a roll of newspaper in his hand. I have no idea what he wanted to achieve with just a newspaper but hey its better than nothing. As we stand behind the steel gate, we can hear  the approaching buzz of air jets that are a dot in the horizon.The minion air jets cower over the toy like computer world, they shine like the glistening diamonds but even in the sky they duplicate everywhere you look. Dan behind me is having a panic attack:  “The ALU is where the calculations are done and it is the link between primary and secondary data.In    simpler   words, I knew you would lead us to DEATH, please kill them first.What if they feed us to the firewall dogs or  the virus lions”.")
+                                  print(" As I watch them approach... I decide to..")
+                                  print("  ")
+                                  print("A:RUN. Save yourself.")
+                                  print("B:STAY...and Fight")
+                                  print("  ")
+                                  stay=input("What should I do?")
+                                  while stay!= "A": #or a or B or b:
+                                      stay=input(" Incorrect choice. Choose wisely just cos my life depends on it. What should I do?")
+                                      if stay=="A": #or a:
+                                          print("  ")
+                                          print("The others stand in one straight line but a gap appears. As everyone looks to see who fell over but all they see is the  quick movement of someone running away. Cyber ran as fast as he could thinking it's better for everyone if there is at    least one person who lives so they could go on to tell of the heroic actions of all the rest. As he got carried away in   his thoughts, a giant pile of hard,rock files landed in front of him restricting him to go any further. As fast as he had ran away he came running back.I was just checking to see how far the virus was.")
+                                          print("I know it's better to fight for something than to live for nothing. But the same cannot be said for this PC.")
+                                          Konstantinos()
+
+def Sue():
+    score = 0
+    print("Now I'm almost inside the system. Based on my notes, I seem to have made significant improvement recently. After entering the system, two option appered. Now I have two option Green or Red this will be a though choice, but the red buttton gave me a bit of a dangerous feeling print Immm I think I will press the green button by trusting my feelings \na. Red Button \nb. Green Button: ")
+    answer2 = input()
+    if answer2 == "b" or answer2 == "Green Button" :
+        score = score + 1
+        print("Correct!")
+        print("Score: ", score)
+        print("\n")
+        Aishah()
+    else: 
+        print("Incorrect! The answer is Green Button")
+        print("Score: ", score)
+
+def SadiStoryPartTwo():
+    print("AI voice: “Cyber activated”. David what did you do this time… well let me see the control board. A single flashing light is flickering on the control board. So, you clicked on a link huh David, well must have been just an accident. YOU CLICKED A LINK FOR HOT SINGLE WOMAN IN YOUR AREA?! OHH COME ON DAIVD, that is the oldest trick in the book. I mean honestly this is even low for you, and not just because you're married. Well, let me quickly activate the firewall and fix the problem like I always do, there and that’s done. AI voice: “Firewall deactivated”. What?! That can’t be possible I just activated the firewa… oh my god, how is this possible? The firewall is accessed and controlled by someone else?! Multiple flashing lights spontaneously pop up on the control board. No, no, no, this can’t be possible, this thing duplicating itself and actively attacking David’s OS files making it unstable. AI voice: “System failure at 15%”. Ok I need to quickly reset the system and reboot before it can spread any further, wait what’s happing? Ground starts to vibrate and shake immensely. David stop shaking the PC it won’t fix the problem! AI voice “Warning, infected system directed large scale distribution denial of service. DDOS attack imminent”. I need to reset right now before the attack happens… come on, I can do this… so close…. just a few more steps….aandd THERE DONE! Phew, that was close. All the sudden the red emergency lights turn on. Cyber quickly looks up at the control panel and is in complete disbelief. I…. I…. I just lost complete control.")
+    print("----------------------------------------------------------")
+    print("Please press enter to continue the story: ")
+    while True:
+        user = input()
+        try:
+            if user == "":
+                Sue()
+            else:
+                print("it didn't work")
+        except:
+            continue
+
+def UserGuess():
+    print()
+    list = ['A. Papaya  ', 'B. Password  ', 'C. Peter']
+    while True:
+         print("----------------------------------------------------------")
+         print(*list, sep='')
+         print("Please enter your choice: ")
+         user = input()   
+         try:
+             if user == "B":
+                 print()
+                 print("----------------------------------------------------------")
+                 print("My password is ‘password’, that’s clever if you ask me. Would you look at that, an email from an unknow sender that I don’t know with a link that isn’t suspicious in anyway. I’m feeling quite risky and fly today, and I deserve to have fun too. Anyways what could possibly go wrong……… Click!")
+                 SadiStoryPartTwo()
+                 break;
+             elif user == "A":
+                 print()
+                 print("----------------------------------------------------------")
+                 print("Right Papaya is my favourite food, surely this must be my password. No that didn't work.")
+             elif user == "C":
+                 print()
+                 print("----------------------------------------------------------")
+                 print("My grandson is a can go to hell!")
+         except: 
+             continue
+
+def SadiStoryPartOne():
+    print("Power up…. Beep…. Beep. Okay finally it’s on. Where is my mouse? Ah, there it is. Now I just need to find my email on the cloud or the internet, either way it’s all magic to me anyway. There that’s my email, and my password is…? Uhm what was my password again, it started with the letter ‘P’. ")
+    UserGuess()
+
+def Guide():
+    print("Welcome to the guide!")
+    print("When choosing option A, you will be given options to choose from where you can decide how the story will lead.")
+    print("Please press enter to return to the main menu: ")
+    while True:
+        user = input()
+        try:
+            if user == "":
+                print("**********************************************************")
+                Menu()
+                break;
+            else:
+                print("invalid option.")
+        except:
+            continue
+
+def Characters():
+    print("Welcome to the Characters!")
+    print("Cyber, Dave")
+    print("Please press enter to return to the main menu: ")
+    while True:
+        user = input()
+        try:
+            if user == "":
+                print("**********************************************************")
+                Menu()
+                break;
+            else:
+                print("invalid option.")
+        except:
+            continue
+
+def Authors():
+    print("Welcome to the authors!")
+    print("The legendary Aishah, The python master Konstantinos, The fabulous Sue, sadi")
+    print("Please press enter to return to the main menu: ")
+    while True:
+        user = input()
+        try:
+            if user == "":
+                print("**********************************************************")
+                Menu()
+                break;
+            else:
+                print("invalid option.")
+        except:
+            continue
+
+def Menu():
+    print("Welcome to Cyber's story, please input the following character: \n**********************************************************")
+    list = ['A. Story', 'B. Guide', 'C. Characters', '     D. Authors', "     E. ScoreBoard", "F. Easter Egg \n**********************************************************"]
+    for n,i in enumerate(list[:3]):
+        print(i,list[n+3])
+    while True:
+        UserInput = input()
+        try:
+            if UserInput == "A":
+                print()
+                print("The start of the story: \n----------------------------------------------------------")
+                SadiStoryPartOne()
+            elif UserInput == "B":
+                print("The Guide: \n**********************************************************")
+                Guide()
+            elif UserInput == "C":
+                print("The Characters: \n**********************************************************")
+                Characters()
+            elif UserInput == "D":
+                print("The Authors: \n********************************************")
+                Authors()
+
+                break;
+            else:
+                print("Invalid option, please try again.")
+        except:
+            continue
+
+Menu()
