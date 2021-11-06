@@ -1,0 +1,35 @@
+def Menu():
+    print("Welcome to ChatBot, please choose one of the followign options from the menu: ")
+    MenuList = ["A. Start-up Chatbot.", "B. Guide to Chatbot", "C. Who is ChatBot", "  D.", "   E.", "     F."]
+    for n,i in enumerate(MenuList[:3]):
+        print(i,MenuList[n+3])
+    User = input()
+    if User == "A":
+        Greetings()
+    elif User == "B":
+        Guide()
+    elif User == "C":
+        History()
+    elif User == "D":
+        pass
+    elif User == "E":
+        pass
+    elif User == "F":
+        pass
+
+def Greetings(): 
+    Greetings = {
+        "Hello", "Hi", "Hey", "What's up", "Good day", "Howdy", "Shallom", "Salam"
+        }
+
+    print("<<< Welcome to chatbot, please feel free to talk to me. >>>")
+    User = input()
+    if User in Greetings:
+        print("<<< Hello, my name it chatbot. Would you like any help. >>>")
+        # New function place here.
+    else:
+        print("< I don't seem to understand, would you like to phraise it in a different way. >")
+        # Error Function.
+        user = input()  
+
+Menu()
