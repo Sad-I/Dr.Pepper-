@@ -16,7 +16,60 @@ def Menu():
         pass
     elif User == "F":
         pass
-
+        
+def ImportantQs():
+    function = {
+       "What is your function?", "How can you help me?", "What kind of problems do you help with?", "What is your purpose?","What problems do you provide help with?"
+        }
+    finance = {
+       "I need financial help?","I need finance help?","I have some questions on finance?", "I need finance advice?", "I need support for financial problems?", "I need help with finance?", "Could you help me with finance problems?", "Can you provide help with finance", "Can you help with finance issues?", "I have questions on the tuition loan?", "I have questions on the maintenance loan", "How do i pay the tuition fee", "How do i pay for the course?"
+        }
+    careers = {
+       "Is there any career support available?", "Can you help me with careers?", "Is there any support for careers"
+       }
+    studentlife = {
+       "What is student life like at uni?", "What is life like at university?", "What is life like on campus?", "What is campus life like?", "What is the culture like on campus"
+       }
+    employment = {
+       "How does the university help with employment?", "Does the uni help with employment?", "Are there any volunteering opportunities?", "Are there any jobs on campus available for students?", "How does the university help with job opportunities?", "What kind of support is available for job seekers?", "Are there opportunities provided for jobs whilst studying?", "What kind of jobs are available on camppus?", "Does the university help students to find jobs?", "Can the university help me find a part-time job?", "Can the university help me to find a job?"
+       }
+    societies = {
+        "What sports and societies are available?", ""
+        }
+    print("I will try my best to answer your important questions.Enter your questions with a capital letter and complete it with a question mark to allow me to understand your questions better and answer them in the most precise way. Thank You. ")
+    User = input()
+    if User in function:
+        print("<<< I am an interactive chatbot and am able to provide answers to many of your questions. I am able to provide help in many aspects of universty life such as finance, careers and many more. If i am unable to provide you with any help then i will try my best to point you in the direction of help.>>>")
+       
+    elif User in finance:
+        print("There is a designated finance department situated at Coventry University who provide advice and support on any financial situation or problem. They can be contacted either face to face at their location or by telephone")
+        print("Location: Priory Street, Coventry CV1 5FB, United Kingdom")
+        print("Telephone: +44(0)24 7765 7688")
+    elif User in careers:
+        print("We take the carreers of our students seriously and will provide one to one support to help them to reach their dreams.")
+        print("We have a designated team available to help with careers and there are regular career fairs to provide a range of information on a wide range of careers.")
+        print("You can contact them either face to face at their location or by telephone.")
+        print("Location: 8 Mile Lane, Coventry, CV1 2TU")
+        print("Tel: +44 (0)24 7765 8787")
+    elif User in studentlife:
+        print("We will try our best to make sure that you are comfortable with studies and when living on campus.")
+        print("We advice our students to make sure that they don't forget to take time off for themselves but also try their best at their studies.")
+        print("There are many activities taking place around the city and there are also many opportunities to take part in clubs and societies. There are also a large variety of historical building situated around the campus which we advise you to go and discover.")
+    elif User in employment:
+        print("The student union provides an opportunity news updated document each week which highlights the upcoming job opportunities and many activities that aare  taking place during the week.")
+        print("There is also an employability team currently in place at Coventry University who are more than willing to help you with your job search and also any placement opportunities.")
+        print( "You can contact them by telephone.")
+        print("Tel: +44(0)24 7765 2011")
+    elif User in societies:
+        print("The student Union are in charge of all the societies that are present at the university. You also have the chance to start a new society if you don't want to participate in the current societies.")
+        print("These are examples of some of the societies we currently have:")
+        print("Art Society, Artificial Intelligence Society, Activism Society, Afrian")
+    else:
+        print("< I don't seem to understand, would you like to phraise it in a different way. >")
+        # Error Function.
+        user = input() 
+        
+        
 def Greetings(): 
     Greetings = {
         "Hello", "Hi", "Hey", "What's up", "Good day", "Howdy", "Shallom", "Salam"
@@ -27,6 +80,7 @@ def Greetings():
     if User in Greetings:
         print("<<< Hello, my name it chatbot. Would you like any help. >>>")
         # New function place here.
+        ImportantQs()
     else:
         print("< I don't seem to understand, would you like to phraise it in a different way. >")
         # Error Function.
