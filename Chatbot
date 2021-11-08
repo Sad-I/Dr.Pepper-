@@ -32,7 +32,7 @@ def Greetings():
         # Error Function.
         user = input()  
 
-Menu()
+
 #I Love Pakistan
 #T20 Winners
 
@@ -75,3 +75,20 @@ while ans:
 
     elif answers == 8:
         print("My sources say no")
+       
+ #correct how i put in my function if i put it in incorrectly pls ut i believe this should be fine :)#
+ def Adios(): 
+    while True:
+        Adios = {"Bye", "Bye-Bye", "Adios", "I'm done", "You're done", "Finito", "Get Lost", "Jog on", "Adios", "Cheerio", "Good day", "Enough", "That's all", "I am done", "I'm Finished", "Job in the town"}
+
+        User = input()
+        try:
+            if User in Adios:
+                print("<<< Thank you for using the WayFinder Chatbot! If you have any more questions or inqueries just start me up again XD. ADIOS! >>>")
+                # empty placement for future functions
+                break;
+            else:
+                print("< I didnt quite catch that :3 Would you like to rephrase that or double check your SPaG? >")
+        except:
+            continue
+Menu()
