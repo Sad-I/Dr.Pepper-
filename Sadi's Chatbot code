@@ -1,0 +1,183 @@
+import random
+
+def start():
+    print("<<< Welcome, I am chattybot. What can I help you with? >>>")
+    con()
+
+def con(): # The different dictionaries containting data.
+    Greetings = {
+        "Hello", "Hey", "Hi", "What's up", "Salam", "What you saying", "Good day", "Howdy", "Shallom", "Hey what's up?", "What you saying?", "Fam",
+        "Yo", "Yoo", "Yooo", "Hii", "Hiii", "Yo what's up?", "Yo what's up?"
+        }
+    Greeting_Questions = {
+        "How are you?", "what you saying?", "How's it going?", "", "You doing good?",
+        "Are you feeling alright", "How's everyting?", "You alright?", "How have you been?", "What's new?",
+        "How's your day going?", "How is it going?", "What's up?", "How you doing?", "How are you doing?", 
+        }
+    Who_Are_You = {
+        "What is your name?", "State your name?", "Name?", "You have a name?", "You got a name?", "Who are you?", "What do you do?", "State your purpose",
+        "What can you do for me?", "Are you a robot?", "Are you an AI?", "What is your full name?", "Who are you fam?", "What can you do?", "How you feeling?",
+        "Do you have feelings?", 
+        }
+    User_Response = {
+        "I'm doing well", "I'm doing fine", "I'm good", "I'm chilling", "I'm good thanks", "I'm good", "I am good thank you", "The sky is up", "I am well thank you", "I'm well", "I'm chill", "Chilling G",
+        "I'm swell", "Yea not bad", "Could be better", "Feeling ok", "I'm okay", "I am feeling bad", "Not doing well", "I am sad", "Very bad",
+        "Not feeling great", "Pretty sad", "I am good", "I am great", "I'm doing great", "I am doing fine", "Feeling good", "I am feeling good", 
+        "Could be ", "I am fine thank you", "I am well", "I'm not too bad", "I'm great"
+        }
+    User_Request = {
+        "I need help", "Can you help me?", "Can you help me please", "Bro help me", "Fam help me", "Help", "Help pls", "I have a problem", 
+        "I have a query", "Can you help me with my query", "Can you help me with a query I have?", "Listen I need help", "Listen I need urgent help",
+        "I have a urgent query", "I need your assistance", "I request your assistance", "I am in need of your help", "I am in need for your assistance",
+        "Help me", "Will you help me?", "Could you give me a hand?", "Will you help me", "Could you give me a hand", "I need your support", "Would you mind helping me?",
+        "I need a helping hand", "Could someone help me?", "Could someone help me", "My bro I need help", "I really need your help", "I need some help"
+        }
+    User_Help = {
+        "I need to find my area of study", "I need to find my room of study", "I need to find the study room", "I help locating my study room", 
+        "Can you help me find you area of study?", "Can you help me locate my area of study?", "I don't know where I have my lecture", "Can you find my lecture hall?",
+        "Can you help me locate my lecture hall?", "I need to find my lecture hall", "I need to find my lecture room", "I help locating my lecture hall", 
+        "I need to find my lecture hall", "I don't know where my lecture is", "Can you help me locate my next lecture room?", "I need help locating my lecture hall",
+        "I need help finding my lecture hall", ""
+        }
+    User_Response2 = {
+        "Ok", "ok", "Not much", "Great", "I guess", "Sure", "sure", "Right", "right", "Nice", "nice", "Well then", "Mmm", "I'm sorry", "Sorry", "Sorry to hear that", "That's sad",
+        "I feel bad for you", ""
+        }
+    Age_AI = {
+        "Age?", "age", "What is your age?", "Do you have an age?", "When were you born?", "Do you have a birthday?", "What is your birthday?", "What year were you born?", "Birthday?", 
+        "Do you have a age?", "Can you tell me your age?", "Give me your age", "Give me your birthday", "Can you explain your birthday", "Please state your birthday", "State your age",
+        "Please give me your brithday", "Please give me your age", "Please provide me your age", "Can you give me your birthday", "Can you provide me your birtday", "What's your birthday?"
+        "Do you age?", "Do you grow old", "Can you age?", "Can you grow old?", 
+        }
+    while True:
+        user = input()
+        user_split = user.split()
+        try:
+            if user in Greetings:
+                A()
+                break;
+            elif user in Greeting_Questions:
+                B()
+                break;
+            elif user in Who_Are_You:
+                C()
+                break;
+            elif user in User_Response:
+                D()
+                break;
+            elif user in User_Request:
+                E()
+                break;
+            elif user in User_Help:
+                Student()
+                break;
+            elif user in User_Response2:
+                F()
+                break;
+            elif user in Age_AI:
+                G()
+                break;
+            elif "lecture" in user_split: 
+                Student()
+            elif "help" in user_split:
+                Student()
+                break;
+            else:
+                print("<<< I seem to not understand you, check you spelling or capital letters. >>>")
+        except:
+            continue
+                
+
+def A():
+    x = random.randint(1, 3)
+    if x == 1:
+        print("<<< Hey buddy, what can I help you with? >>>")
+        con()
+    elif x == 2:
+        print("<<< Yoo what you saying my G. What can I do for you? >>>")
+        con()
+    elif x == 3:
+        print("<<< Hey, Hey, Hey. What's up? >>>")
+        con() # Different responses from our chatbot. 
+
+def B():
+    x = random.randint(1, 3)
+    if x == 1:
+        print("<<< I am good thank you, how are you? >>>")
+        con()
+    elif x == 2:
+        print("<<< I'm good G, What you saying? >>>")
+        con()
+    elif x == 3:
+        print("<<< Yoyo I'm doing well, what's up with you? >>>")
+        con()
+
+def C():
+    x = random.randint(1, 3)
+    if x == 1:
+        print("<<< My name is chatty bot. >>>")
+        con()
+    elif x == 2:
+        print("<<< Fam it's me, bad man chatbot. >>>")
+        con()
+    elif x == 3:
+        print("<<< Chattybot! That's the name. >>>")
+        con()
+
+def D():
+    x = random.randint(1, 3)
+    if x == 1:
+        print("<<< That's good to hear. >>>")
+        con()
+    elif x == 2:
+        print("<<< Tights G, tight. >>>")
+        con()
+    elif x == 3:
+        print("<<< I am happy for you. >>>")
+        con()
+
+def E():
+    x = random.randint(1, 3)
+    if x == 1:
+        print("<<< How may I be of assistance to you? >>>")
+        con()
+    elif x == 2:
+        print("<<< Fam what can I cop for you? >>>")
+        con()
+    elif x == 3:
+        print("<<< I can help! What do you need help with.? >>>")
+        con()
+
+def F():
+    x = random.randint(1, 3)
+    if x == 1:
+        print("<<< Great, that's great. >>>")
+        con()
+    elif x == 2:
+        print("<<< Safe G, that's real Safe >>>")
+        con()
+    elif x == 3:
+        print("<<< Mmm okay, nice. :( >>>")
+        con()
+
+def G():
+    x = random.randint(1, 3)
+    if x == 1:
+        print("<<< Unfortunatly I don't age nor do I have a birthday. :( >>>")
+        con()
+    elif x == 2:
+        print("<<< You a fed or something, I don't need to give that information G. >>>")
+        con()
+    elif x == 3:
+        print("<<< I might have an age, but my makers don't allow me to count :(. >>>")
+        con()
+
+
+def Student(): # Need the database to connect.
+    print("<<< I am sure able to help you with that. >>>")
+    print()
+    print("<<< Could you please provide me your subject of study >>>")
+    user = input()
+
+
+start()
