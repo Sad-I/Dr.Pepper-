@@ -4,13 +4,15 @@ def start():
     print("<<< Welcome, I am chattybot. What can I help you with? >>>")
     con()
 
+
+
 def con(): # The different dictionaries containting data.
     Greetings = {
-        "Hello", "Hey", "Hi", "What's up", "Salam", "What you saying", "Good day", "Howdy", "Shallom", "Hey what's up?", "What you saying?", "Fam",
-        "Yo", "Yoo", "Yooo", "Hii", "Hiii", "Yo what's up?", "Yo what's up?"
+        "Hello", "hello" "Hey", "Hi", "What's up", "Salam", "What you saying", "Good day", "Howdy", "Shallom", "Hey what's up?", "What you saying?", "Fam",
+        "Yo", "Yoo", "Yooo", "Hii", "Hiii", "Yo what's up?", "Yo what's up?", "Welcome", "Hello there"
         }
     Greeting_Questions = {
-        "How are you?", "what you saying?", "How's it going?", "", "You doing good?",
+        "How are you?", "what you saying?", "How's it going?", "You doing good?",
         "Are you feeling alright", "How's everyting?", "You alright?", "How have you been?", "What's new?",
         "How's your day going?", "How is it going?", "What's up?", "How you doing?", "How are you doing?", 
         }
@@ -37,11 +39,11 @@ def con(): # The different dictionaries containting data.
         "Can you help me find you area of study?", "Can you help me locate my area of study?", "I don't know where I have my lecture", "Can you find my lecture hall?",
         "Can you help me locate my lecture hall?", "I need to find my lecture hall", "I need to find my lecture room", "I help locating my lecture hall", 
         "I need to find my lecture hall", "I don't know where my lecture is", "Can you help me locate my next lecture room?", "I need help locating my lecture hall",
-        "I need help finding my lecture hall", ""
+        "I need help finding my lecture hall", 
         }
     User_Response2 = {
         "Ok", "ok", "Not much", "Great", "I guess", "Sure", "sure", "Right", "right", "Nice", "nice", "Well then", "Mmm", "I'm sorry", "Sorry", "Sorry to hear that", "That's sad",
-        "I feel bad for you", ""
+        "I feel bad for you", 
         }
     Age_AI = {
         "Age?", "age", "What is your age?", "Do you have an age?", "When were you born?", "Do you have a birthday?", "What is your birthday?", "What year were you born?", "Birthday?", 
@@ -49,9 +51,13 @@ def con(): # The different dictionaries containting data.
         "Please give me your brithday", "Please give me your age", "Please provide me your age", "Can you give me your birthday", "Can you provide me your birtday", "What's your birthday?"
         "Do you age?", "Do you grow old", "Can you age?", "Can you grow old?", 
         }
+    Human = { #update 
+        "I want to talk to a human"
+        }
     while True:
         user = input()
         user_split = user.split()
+        
         try:
             if user in Greetings:
                 A()
@@ -77,19 +83,31 @@ def con(): # The different dictionaries containting data.
             elif user in Age_AI:
                 G()
                 break;
+            elif user in Human:
+                EmailHuman()
+                break;
+            elif "Geocode" in user_split: # fix capital letter
+                Geocode()
+                break;
+            elif "weather" in user_split:
+                Weather()
+                break;
+            elif user == "":
+                print("Stop pressing enter")
+
             elif "lecture" in user_split: 
                 Student()
             elif "help" in user_split:
                 Student()
                 break;
             else:
-                print("<<< I seem to not understand you, check you spelling or capital letters. >>>")
+                Special()
         except:
             continue
                 
 
-def A():
-    x = random.randint(1, 3)
+def A(): # Different responses from our chatbot. 
+    x = random.randint(1, 3) 
     if x == 1:
         print("<<< Hey buddy, what can I help you with? >>>")
         con()
@@ -98,7 +116,7 @@ def A():
         con()
     elif x == 3:
         print("<<< Hey, Hey, Hey. What's up? >>>")
-        con() # Different responses from our chatbot. 
+        con() 
 
 def B():
     x = random.randint(1, 3)
@@ -173,11 +191,105 @@ def G():
         con()
 
 
+def Name():
+    x == random.randint()
+    if x == 1:
+        print("My name is Chattybot.")
+    elif x == 2:
+        print("Fam what are you a fed?!")
+    elif x == 3:
+        print("Name? You know that I am an AI right?")
+
+def Special():
+    x = random.randint(1, 6)
+    if x == 1:
+        print("What do you want me to say?")
+    elif x == 2:
+        print("Right I hope that helps.")
+    elif x == 3:
+        print("Why do you ask?")
+    elif x == 4:
+        print("Computer says no :(")
+    elif x == 5:
+        print("I guess right?!")
+    elif x == 6:
+        print("Ok.")
+
+
 def Student(): # Need the database to connect.
     print("<<< I am sure able to help you with that. >>>")
     print()
     print("<<< Could you please provide me your subject of study >>>")
     user = input()
+
+def EmailHuman():
+    import smtplib
+    FName = input("What is your forename name? ")
+    LName = input("What is your surname name? ")
+    Email = input("What is your Email Address? ")
+    Number = input("What is your contact number? ")
+    Subject = input("Why would you like to speak to a human? ")
+    Details = input("Any further details? ")
+    Sender = "wayfinderchatbot@gmail.com"
+    Password = "wayfinder"
+    Emessage = "Hi this is "+FName+" "+LName+" and i am contacting you about "+Subject+". \nFurther details explaining the situation: \n"+Details+"\nThank you for reading my message and i hope you receive it in good health. please contact me on my phone number which is "+Number+" or on my email at "+Email
+    server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
+    server.login(Sender, Password)
+    server.sendmail(Sender, Sender, Emessage)
+    server.quit
+    EmailLoop = input("Thank You! The Message has been sent and we aim to respond ASAP \nIn the meantime would you like to read the Email you sent? ")
+    if EmailLoop == "Yes" or "yes":
+        print(Emessage)
+        print("Thank you for contacting us we will know redirect you back to the main chatbot! :D")
+        print()
+        print("<<< Wagwan G >>>")
+        con()
+    else:
+        print("Thank you for contacting us we will know redirect you back to the main chatbot! :D")
+        con()
+
+def Geocode():
+    cov_uni = {
+        "Main campus", "Uni", "uni", "University", "university", "Coventry uni", "Coventry university", "Main building",
+        }
+    print("*If it is a custom location, please format it as 'Street, City, Country Code'")
+    print("*Example: 'Priory St, Coventry, UK'")
+    Input = input("Where Do You Geocoded? ")
+    if Input in cov_uni:
+        from pprint import pprint
+        import googlemaps 
+
+        APIKey = "AIzaSyB9lshmc9qMiWXmWMmjA7L9YAXVePkH0XI"
+
+        map_client = googlemaps.Client(APIKey)
+
+        Uni = "Priory St, Coventry, UK"
+        reply = map_client.geocode(Uni)
+        pprint(reply)
+        GeocodeLoop()
+    else:
+        from pprint import pprint
+        import googlemaps 
+
+        APIKey = "AIzaSyB9lshmc9qMiWXmWMmjA7L9YAXVePkH0XI"
+
+        map_client = googlemaps.Client(APIKey)
+
+        Custom = Input
+        reply = map_client.geocode(Custom)
+        pprint(reply)
+        GeocodeLoop()
+
+def GeocodeLoop():
+    print("Would you Like to Geoxode another location?")
+    print("Input Y for Yes")
+    print("Or N for No")
+    GeoLoopQ = input()
+    if GeoLoopQ == "Y":
+        Geocode()
+    else:
+        print("\n<<< Hello again, welcome back! >>>")
+        con()
 
 
 start()
